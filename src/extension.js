@@ -113,7 +113,7 @@ class SearchProvider {
     return new Promise((resolve, reject) => {
       const word = terms.splice(1).join(' ');
 
-      if (terms[0] !== 'define' || word.length == 0) {
+      if (['def', 'define', 'definition'].includes(terms[0]) || word.length == 0) {
         resolve([]);
         return;
       }
