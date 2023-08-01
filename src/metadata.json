@@ -1,0 +1,9 @@
+{
+  "name": "Dictionary Search Provider",
+  "description": "Shows matching dictioary entries in gnome search",
+  "uuid": "dictionary-search-provider@micha4w.ch",
+  "shell-version": [
+    "44"
+  ],
+  "url": "https://github.com/micha4w/gnome-dictionary-search-provider"
+}
