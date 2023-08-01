@@ -1,24 +1,21 @@
-# Pass Search Provider for GNOME Shell
-
-Find and copy passwords stored in [pass](https://www.passwordstore.org/) in GNOME Shell.
+# Dictionary Search Provider for GNOME Shell
+Shows the dictionary entry for the word you search for.
 
 ## Installation
 
-### a) Installing from extensions.gnome.org
-
-This is the easiest way to install the extension. Just head over to [extensions.gnome.org](https://extensions.gnome.org/extension/4645/pass-search-provider/)
-and flip the switch!
-
-### b) Cloning the Latest Version with git
-
-Execute the clone command below where you want to have the source code of the extension.
+Install necessary stuffs
+```sh
+sudo apt install dict dict-wn
 ```
-git clone https://github.com/lavrov/gnome-extension-pass-search-provider.git
-cd gnome-extension-pass-search-provider
+
+Clone the repo and install
+```sh
+git clone https://github.com/micha4w/gnome-dictionary-search-provider
+cd gnome-dictionary-search-provider
 make install
 ```
 
-Then logout and login again. Then you can enable the extension with the Gnome Tweak Tool, the Extensions application or with this command:
-```
+Then relog, or in X11 Alt+F2, 'r', go back to this directory and run:
+```sh
 make enable
 ```
